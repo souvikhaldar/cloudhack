@@ -27,6 +27,7 @@
       args:
         chdir: /root/
 
+    // TODO: make it run in service
     - name: Run hugo server
       shell: /usr/local/bin/hugo server -p 80
       args:
