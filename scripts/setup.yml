@@ -1,0 +1,34 @@
+---
+- hosts : server
+  remote_user: root
+  become: yes
+  vars:
+    golang_env:
+      GOPATH: /root/development/go
+  tasks:
+    - name: install golang
+      package: 
+        name: golang-go
+        state: present
+     
+      
+    - name: pull website content from github
+      git: 
+        repo: https://github.com/souvikhaldar/souvikhaldar.info.git
+        dest: /root/souvikhaldar.info
+        update: yes
+        version: "master"
+    - name: download hugo source code
+      get_url:
+        url: https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.deb
+        dest: /root/
+    - name: Install hugo
+      shell: dpkg -i hugo*.deb
+      args:
+        chdir: /root/
+
+    - name: Run hugo server
+      shell: /usr/local/bin/hugo server -p 80
+      args:
+        chdir: /root/souvikhaldar.info/
+    
