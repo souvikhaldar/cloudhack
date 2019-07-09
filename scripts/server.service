@@ -1,0 +1,6 @@
+[Unit]
+Description= hugo server
+
+[Service]
+
+[Install]

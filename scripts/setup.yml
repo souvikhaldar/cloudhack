@@ -1,6 +1,6 @@
 ---
-- hosts : server
-  remote_user: root
+- hosts : ec2
+  remote_user: ubuntu
   become: yes
   vars:
     golang_env:
@@ -27,7 +27,7 @@
       args:
         chdir: /root/
 
-    // TODO: make it run in service
+    # TODO: make it run in service
     - name: Run hugo server
       shell: /usr/local/bin/hugo server -p 80
       args:
