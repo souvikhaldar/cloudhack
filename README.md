@@ -26,3 +26,5 @@ Here my goal to create a tool that can easily deploy your static site to Digital
 
 ## Conclusion
 Your Hugo powered static site is now available at http://<ip-address>. To make it point your custom domain name, follow this link. Hope this automation helped you deploy your site easily to the cloud of your choice, preferably Digital Ocean!
+
+* [link to the write-up](https://medium.com/@souvikhaldar/digital-ocean-cloudhack-deploy-static-site-to-do-droplet-easily-ec89e5136f8c)
