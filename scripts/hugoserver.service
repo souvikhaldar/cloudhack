@@ -1,0 +1,10 @@
+[Unit]
+Description= hugo server
+
+[Service]
+WorkingDirectory= <same-as-website-path>
+ExecStart= /usr/local/bin/hugo server --watch --baseUrl=http://<ip> --port=80 --appendPort=false --bind=0.0.0.0
+Restart= always
+
+[Install]
+WantedBy= multi-user.target

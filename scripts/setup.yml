@@ -1,21 +1,21 @@
 ---
-- hosts : ec2
-  remote_user: ubuntu
+- hosts : droplet
+  remote_user: "{{remote_user}}"
   become: yes
-  vars:
-    golang_env:
-      GOPATH: /root/development/go
   tasks:
     - name: install golang
       package: 
         name: golang-go
         state: present
-     
-      
+    - name: Copy hugo server's service file
+      template:
+        src: hugoserver.service
+        dest: /etc/systemd/system
+        mode: 0644
     - name: pull website content from github
       git: 
-        repo: https://github.com/souvikhaldar/souvikhaldar.info.git
-        dest: /root/souvikhaldar.info
+        repo: "{{ repo }}"
+        dest: "{{ website_path }}"
         update: yes
         version: "master"
     - name: download hugo source code
@@ -27,9 +27,6 @@
       args:
         chdir: /root/
 
-    # TODO: make it run in service
     - name: Run hugo server
-      shell: /usr/local/bin/hugo server -p 80
-      args:
-        chdir: /root/souvikhaldar.info/
+      systemd: name=hugoserver state=restarted enabled=yes daemon_reload=yes
     

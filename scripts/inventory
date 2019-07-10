@@ -1,4 +1,8 @@
 [droplet]
-68.183.86.2
-[ec2]
-52.13.104.96
+<ip-of-cloud-instance>
+
+
+[all:vars]
+remote_user = <name-o-remote-user>
+website_path = <path-to-website-contents>
+repo = <repo-containing-hugo-site>
