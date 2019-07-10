@@ -20,5 +20,9 @@ Here my goal to create a tool that can easily deploy your static site to Digital
 
 6. Now go to the /scripts directory, add required data in the inventory file and WorkingDirectory information in the hugoserver.service file, then run `./deploy.sh`.  
 
+
+## DigitalOcean products used in the hack
+* Digital Ocean Droplet
+
 ## Conclusion
 Your Hugo powered static site is now available at http://<ip-address>. To make it point your custom domain name, follow this link. Hope this automation helped you deploy your site easily to the cloud of your choice, preferably Digital Ocean!
