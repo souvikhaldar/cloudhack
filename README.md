@@ -18,7 +18,7 @@ Here my goal to create a tool that can easily deploy your static site to Digital
 
 5. Append export GOPATH="/root/development/go" in the ~/.profile file. Then source ~/.profile.  
 
-6. Now go to the /scripts directory, add required data in the inventory file and WorkingDirectory information in the hugoserver.service file, then run `./deploy.sh`.  
+6. Now go to the /scripts directory, add required data in the inventory file, then run `./deploy.sh`.  
 
 
 ## DigitalOcean products used in the hack

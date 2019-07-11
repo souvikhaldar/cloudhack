@@ -3,6 +3,5 @@
 
 
 [all:vars]
-remote_user = <name-o-remote-user>
-website_path = <path-to-website-contents>
-repo = <repo-containing-hugo-site>
+remote_user = root
+repo = <url-of-repo>

@@ -14,8 +14,8 @@
         mode: 0644
     - name: pull website content from github
       git: 
-        repo: "{{ repo }}"
-        dest: "{{ website_path }}"
+        repo: "{{repo}}"
+        dest: /root/StaticSite
         update: yes
         version: "master"
     - name: download hugo source code
