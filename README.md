@@ -1,5 +1,6 @@
 ## CloudHack
 Easily deploy static sites created using [Hugo](https://gohugo.io/) to any cloud instance of choice!  
+(currently supports debian based servers only) 
 
 ## Steps
 1. Create a cloud instance and assign it your system's public SSH key (generally stored in ~/.ssh/id_rsa.pb)  
