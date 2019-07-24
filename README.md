@@ -13,6 +13,6 @@ Easily deploy static sites created using [Hugo](https://gohugo.io/) to any cloud
 
 ## Result
 Your Hugo powered static site is now available at `http://<ip-address>`  
-To make it point your custom domain name, follow this link. Hope this automation helped you deploy your site easily to the cloud of your choice, preferably Digital Ocean!  
+I followed [this](https://www.howlthemes.com/point-domain-name-digitalocean-droplet/) article to assign a custom domain name (souvikhaldar.info in my case) to the given IP address. I've used Digital Ocean's droplet, but you can use any cloud service provider of choice. Hope this automation tool helped you deploy your site easily to the cloud of your choice.  
 
 * [Link to my website deployed by above method](http://souvikhaldar.info)
