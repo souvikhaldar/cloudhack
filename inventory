@@ -1,0 +1,8 @@
+
+[droplet]
+68.183.86.2
+
+
+[all:vars]
+remote_user = root
+repo = https://github.com/souvikhaldar/souvikhaldar.info.git

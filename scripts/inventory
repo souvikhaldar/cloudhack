@@ -1,7 +1,0 @@
-[droplet]
-<ip-of-cloud-instance>
-
-
-[all:vars]
-remote_user = root
-repo = <url-of-repo>

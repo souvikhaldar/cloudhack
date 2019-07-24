@@ -3,10 +3,10 @@
   remote_user: "{{remote_user}}"
   become: yes
   tasks:
-    - name: install golang
-      package: 
-        name: golang-go
-        state: present
+    #- name: install golang
+    #  package: 
+    #    name: golang-go
+    #    state: present
     - name: Copy hugo server's service file
       template:
         src: hugoserver.service
