@@ -8,7 +8,8 @@ Easily deploy static sites created using [Hugo](https://gohugo.io/) to any cloud
 4. `cd` into the cloned repo i.e `cloudhack/` then add executable permission to `deploy.sh` and `conf` by running `chmod +x deploy.sh` and `chmod +x conf`.  
 5. `./conf -ip <ip> -repo <repo-url>`  
 6. `./deploy.sh`  
-7. Make sure port 80 of this server is open in the firewall setting and is not busy.  
+
+P.S: Make sure port 80 of this server is open in the firewall setting and is not busy.  
 
 
 ## Result
