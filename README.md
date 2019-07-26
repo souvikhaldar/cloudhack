@@ -6,7 +6,7 @@ Easily deploy static sites created using [Hugo](https://gohugo.io/) to any cloud
 1. Create a cloud instance and assign it your system's public SSH key (generally stored in ~/.ssh/id_rsa.pb)  
 2. Copy the public ssh key of this droplet to the GitHub account which has the contents for the site. (if the content is stored in local, it is advised to store it in Github as a repository).   
 3. Install Ansible on your machine. On Mac, you can install ansible using its brew package manager- `brew install ansible`   
-4. `cd` into the cloned repo i.e `cloudhack/` then add executable permission to `deploy.sh` and `conf` by running `chmod +x deploy.sh` and `chmod +x conf`.  
+4. `cd` into the cloned repo i.e `cloudhack/` then add executable permission to `deploy.sh` and `conf<OS>` by running `chmod +x deploy.sh` and `chmod +x confLinux`.  
 5. `./conf<OS> -ip <ip> -repo <repo-url>`  eg `confMac -ip <ip> -repo <repo-url>` on Mac.  
 6. `./deploy.sh`  
 
