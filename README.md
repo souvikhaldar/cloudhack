@@ -15,6 +15,10 @@ P.S: Make sure port 80 of this server is open in the firewall setting and is not
 
 ## Result
 Your Hugo powered static site is now available at `http://<ip-address>`  
-I followed [this](https://www.howlthemes.com/point-domain-name-digitalocean-droplet/) article to assign a custom domain name (souvikhaldar.info in my case) to the given IP address. If you have already assigned the IP to your domain name, you can provide the domain name in the `ip` flag to `conf`. I've used Digital Ocean's droplet, but you can use any cloud service provider of choice. Hope this automation tool helped you deploy your site easily to the cloud of your choice.  
+I followed [this](https://www.howlthemes.com/point-domain-name-digitalocean-droplet/) article to assign a custom domain name (souvikhaldar.info in my case) to the given IP address. If you have already assigned the IP to your domain name, you can provide the domain name in the `ip` flag to `conf`. I've used Digital Ocean's droplet, but you can use any cloud service provider of choice. Hope this automation tool helped you deploy your site easily to the cloud of your choice.   
+
+## Video demonstration 
+Link to youtube video for easy demonstration
+https://youtu.be/Op3M1PBSQL4
 
 * [Link to my website deployed by above method](http://souvikhaldar.info)
