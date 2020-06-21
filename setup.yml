@@ -7,6 +7,10 @@
     #  package: 
     #    name: golang-go
     #    state: present
+    - name: Create StaticSite directory
+      file:
+        path: /root/StaticSite
+        state: directory
     - name: Copy hugo server's service file
       template:
         src: hugoserver.service
