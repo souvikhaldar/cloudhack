@@ -1,0 +1,11 @@
+
+[Unit]
+Description= hugo server
+
+[Service]
+WorkingDirectory= /root/StaticSite/
+ExecStart= /usr/local/bin/hugo server --watch --baseUrl= --port=80 --appendPort=false --bind=0.0.0.0
+Restart= always
+
+[Install]
+WantedBy= multi-user.target

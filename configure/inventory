@@ -1,0 +1,8 @@
+
+[droplet]
+
+
+
+[all:vars]
+remote_user = 
+repo = 
