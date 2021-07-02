@@ -4,7 +4,7 @@ Description= hugo server
 
 [Service]
 WorkingDirectory= /root/StaticSite/
-ExecStart= /usr/local/bin/hugo server --watch --baseUrl= --port=80 --appendPort=false --bind=0.0.0.0
+ExecStart= /usr/local/bin/hugo server --watch --baseUrl=souvikhaldar.info --port=80 --appendPort=false --bind=0.0.0.0
 Restart= always
 
 [Install]

@@ -1,8 +1,8 @@
 
 [droplet]
-
+souvikhaldar.info
 
 
 [all:vars]
 remote_user = root
-repo = 
+repo = git@github.com:souvikhaldar/souvikhaldar.info.git
