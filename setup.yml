@@ -22,14 +22,9 @@
         dest: /root/StaticSite
         update: yes
         version: "master"
-    - name: download hugo source code
-      get_url:
-        url: https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.deb
-        dest: /root/
+  
     - name: Install hugo
-      shell: dpkg -i hugo*.deb
-      args:
-        chdir: /root/
+      shell: apt install hugo
 
     - name: Run hugo server
       systemd: name=hugoserver state=restarted enabled=yes daemon_reload=yes
